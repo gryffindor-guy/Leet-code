@@ -1,17 +1,13 @@
 class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-        int[] arr = new int[2];
-        for (int i = 0; i < nums.length; i++) {
-            int difference = target - nums[i];
-            if(map.containsKey(difference)) {
-                arr[0] = map.get(difference);
-                arr[1] = i;
-                return arr;
+        for (int i = 0; i push leet< nums.length; i++) {
+            if(map.containsKey(target - nums[i])) {
+                return new int[] {map.get(target - nums[i]), i};
             } else {
                 map.put(nums[i], i);
             }
         }
-        return arr;
+        return null;
     }
 }
