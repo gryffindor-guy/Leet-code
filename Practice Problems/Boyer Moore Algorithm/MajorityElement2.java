@@ -1,4 +1,5 @@
 class MajorityElement2 {
+    
     public List<Integer> majorityElement(int[] nums) {
         int el1 = 0, el2 = 0, count1 = 0, count2 = 0;
         for (int num : nums) {
