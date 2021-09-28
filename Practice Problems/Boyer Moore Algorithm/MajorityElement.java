@@ -1,4 +1,5 @@
 class MajorityElement {
+    
     public int majorityElement(int[] nums) {
         int el1 = 0, c1 = 0;
         for (int num : nums) {
